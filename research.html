@@ -1,14 +1,17 @@
+```html
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>Research</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
       max-width: 1200px;
       margin: auto;
       padding: 20px;
+      line-height: 1.6;
     }
 
     h1 {
@@ -23,8 +26,38 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .research-title {
+      color: magenta;
+      font-weight: bold;
+      font-size: 1.15em;
+    }
+
+    .research-description {
+      color: black;
+      margin: 10px 0 20px 0;
+      text-align: justify;
+    }
+
+    .citation {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 40px;
+    }
+
+    video,
+    img {
+      margin: 15px 0;
+      max-width: 100%;
+      height: auto;
+    }
+
+    li {
+      margin-bottom: 50px;
+    }
   </style>
 </head>
+
 <body>
 
 <nav style="margin-bottom:30px;">
@@ -33,33 +66,41 @@
   <a href="research.html" style="margin-right:20px;">Research</a>
   <a href="publications.html" style="margin-right:20px;">Publications</a>
   <a href="grants.html" style="margin-right:20px;">Awards</a>
-  
 </nav>
 
-<h1>Current interests</h1>
+<h1>Current Interests</h1>
 
 <ul>
-  <li style="color: magenta;">
-    Topological defects in deformable active systems
-    <small style="display:block; color: black; margin-bottom:30px;">
-      We propose a hydrodynamic theory to examine the emergence of contraction waves in dense active
-liquids composed of pulsating deformable particles. Our theory couples the liquid density with a
-chemical phase that determines the periodic deformation of the particles. This mechanochemical
-coupling regulates the interplay between the flow induced by local deformation, and the resistance
-to pulsation stemming from steric interaction. We show that this interplay leads the emergent
-contraction waves to spontaneously organize into a packing of pacemakers. We reveal that the
-dynamics of these pacemakers is governed by a complex feedback between slow and fast topological
-defects that form asters in velocity flows. In fact, our defect analysis is a versatile platform for
-investigating the self-organization of waves in a wide range of contractile systems. Our results shed
-light on the key mechanisms that control the rich phenomenology of pulsating liquids, with relevance
-for biological systems such as tissues made of confluent pulsating cells
-    <br>
-    <video width="600" controls style="margin:15px 0;">
+
+  <li>
+    <span class="research-title">
+      Topological defects in deformable active systems
+    </span>
+
+    <div class="research-description">
+      We propose a hydrodynamic theory to examine the emergence of contraction
+      waves in dense active liquids composed of pulsating deformable particles.
+      Our theory couples the liquid density with a chemical phase that
+      determines the periodic deformation of the particles. This
+      mechanochemical coupling regulates the interplay between the flow induced
+      by local deformation and the resistance to pulsation stemming from steric
+      interactions. We show that this interplay leads the emergent contraction
+      waves to spontaneously organize into a packing of pacemakers. We reveal
+      that the dynamics of these pacemakers is governed by a complex feedback
+      between slow and fast topological defects that form asters in velocity
+      flows. Our defect analysis provides a versatile framework for
+      investigating the self-organization of waves in a wide range of
+      contractile systems. These results shed light on key mechanisms that
+      control the rich phenomenology of pulsating liquids, with relevance to
+      biological systems such as tissues composed of confluent pulsating cells.
+    </div>
+
+    <video width="600" controls>
       <source src="movie-4panels.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <br>
-    <small style="display:block; margin-bottom:20px;">
+
+    <small class="citation">
       TB, T. Desaleux, J. Ranft and E. Fodor,
       <a href="https://arxiv.org/abs/2509.19024" target="_blank">
         arXiv:2509.19024 (2025)
@@ -67,46 +108,74 @@ for biological systems such as tissues made of confluent pulsating cells
     </small>
   </li>
 
-  <li style="color: magenta;">
-    Statistical physics of systems out of equilibrium
-    <small style="display:block; color: black; margin-bottom:30px;">
-      We analyze the long-lasting effects of initial conditions on dynamical fluctuations in one-dimensional diffusive systems. 
-      We consider the mean-squared displacement of tracers in homogeneous systems with single-file diffusion, and current fluctuations for noninteracting diffusive particles. 
-      In each case we show analytically that the long-term memory of initial conditions is mediated by a single static quantity: a generalized compressibility that quantifies
-      the density fluctuations of the initial state. We thereby identify a universality class of hyperuniform initial states whose dynamical variances coincide with the quenched cases 
-      studied previously, alongside a continuous family of other classes among which equilibrated (or annealed) initial conditions are but one member. 
-      We verify our predictions through extensive Monte Carlo simulations.
-    <br>
-    <img src="outfig2-new-crop-1.png" width="600" style="margin:15px 0;">
-    <br>
-    <small style="display:block; margin-bottom:20px;">
+  <li>
+    <span class="research-title">
+      Statistical physics of systems out of equilibrium
+    </span>
+
+    <div class="research-description">
+      We analyze the long-lasting effects of initial conditions on dynamical
+      fluctuations in one-dimensional diffusive systems. We consider the
+      mean-squared displacement of tracers in homogeneous systems with
+      single-file diffusion and current fluctuations for noninteracting
+      diffusive particles. In each case, we show analytically that the
+      long-term memory of initial conditions is mediated by a single static
+      quantity: a generalized compressibility that quantifies the density
+      fluctuations of the initial state. We thereby identify a universality
+      class of hyperuniform initial states whose dynamical variances coincide
+      with previously studied quenched cases, alongside a continuous family of
+      other classes among which equilibrated (annealed) initial conditions are
+      but one member. Extensive Monte Carlo simulations verify these
+      predictions.
+    </div>
+
+    <img src="outfig2-new-crop-1.png" width="600"
+         alt="Statistical physics of systems out of equilibrium">
+
+    <small class="citation">
       TB, R. L. Jack and M. E. Cates,
-      <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.106.L062101" target="_blank">
+      <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.106.L062101"
+         target="_blank">
         Phys. Rev. E 106, L062101 (2022)
       </a>
     </small>
   </li>
 
-  <li style="color: magenta;">
-    Finite-time optimal control of complex many-body systems
-    <small style="display:block; color: black; margin-bottom:30px;">
-      We present a rigorous and general framework for the optimal control of equilibrium systems governed by field-theoretic dynamics with 
-      arbitrary free energy functionals, mobilities, and multiple control parameters. Focusing on the near-quasi-static, small noise regime, we derive explicit 
-      expressions for the work performed during slow driving protocols by expanding around equilibrium solutions. Our approach applies broadly to systems such 
-      as Model A magnetization dynamics and phase-separating fields, allowing systematic evaluation of the energetic cost associated with finite-time control. 
-      By minimizing the leading-order correction to quasi-static work, we identify optimal protocols for varying control parameters and clarify the conditions for the uniqueness of optimal paths.
-      This framework provides a basis for designing energetically efficient protocols in complex, multi-parameter, macroscopically fluctuating systems.
-    <br>
-    <video width="600" controls style="margin:15px 0;">
-      <source src="All evolution for ModelA two parameters for tirthankar1.mp4" type="video/mp4">
+  <li>
+    <span class="research-title">
+      Finite-time optimal control of complex many-body systems
+    </span>
+
+    <div class="research-description">
+      We present a rigorous and general framework for the optimal control of
+      equilibrium systems governed by field-theoretic dynamics with arbitrary
+      free-energy functionals, mobilities, and multiple control parameters.
+      Focusing on the near-quasi-static, small-noise regime, we derive explicit
+      expressions for the work performed during slow driving protocols by
+      expanding around equilibrium solutions. Our approach applies broadly to
+      systems such as Model A magnetization dynamics and phase-separating
+      fields, allowing systematic evaluation of the energetic cost associated
+      with finite-time control. By minimizing the leading-order correction to
+      quasi-static work, we identify optimal protocols for varying control
+      parameters and clarify conditions for the uniqueness of optimal paths.
+      This framework provides a basis for designing energetically efficient
+      protocols in complex, multi-parameter, macroscopically fluctuating
+      systems.
+    </div>
+
+    <video width="600" controls>
+      <source src="All evolution for ModelA two parameters for tirthankar1.mp4"
+              type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <br>
-    <small style="display:block; margin-bottom:20px;">
+
+    <small class="citation">
       J. Miranda, TB, T. Agranov and E. Fodor, in prep. (2026)
     </small>
   </li>
+
 </ul>
 
 </body>
 </html>
+```
