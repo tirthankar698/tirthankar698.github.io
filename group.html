@@ -1,43 +1,117 @@
-<h1>Group</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h2>PI</h2>
+  <title>Group</title>
 
-<div class="member">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
 
-  <img
-    src="profile.jpg"
-    alt="Tirthankar Banerjee"
-    class="member-photo"
-  >
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
 
-  <div class="member-info">
-    <h3>Tirthankar Banerjee</h3>
+    h2 {
+      color: #2c3e50;
+      margin-top: 35px;
+      margin-bottom: 20px;
+    }
 
-    <p>
-      Assistant Professor<br>
-      School of Physical Sciences<br>
-      National Institute of Science Education and Research
-    </p>
+    h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: #2c3e50;
+    }
+
+    .member {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 30px;
+    }
+
+    .member-photo {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .member-info p {
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      .member {
+        align-items: flex-start;
+        gap: 15px;
+      }
+
+      .member-photo {
+        width: 90px;
+        height: 90px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Group</h1>
+
+  <h2>PI</h2>
+
+  <div class="member">
+
+    <img
+      src="profile.jpg"
+      alt="Tirthankar Banerjee"
+      class="member-photo"
+    >
+
+    <div class="member-info">
+
+      <h3>Tirthankar Banerjee</h3>
+
+      <p>
+        Assistant Professor<br>
+        School of Physical Sciences<br>
+        National Institute of Science Education and Research
+      </p>
+
+    </div>
+
   </div>
 
-</div>
 
-<h2>Postdocs</h2>
+  <h2>Postdocs</h2>
 
-<div class="member">
+  <div class="member">
 
-  <img
-    src="SA.jpg"
-    alt="Tirthankar Banerjee"
-    class="member-photo"
-  >
+    <img
+      src="SA.jpg"
+      alt="Sagarika Adhikary"
+      class="member-photo"
+    >
 
-  <div class="member-info">
-    <h3>Sagarika Adhikary</h3>
+    <div class="member-info">
 
-    <p>
-      Postdoctoral Researcher
-    </p>
+      <h3>Sagarika Adhikary</h3>
+
+      
+
+    </div>
+
   </div>
 
-</div>
+</body>
+</html>
